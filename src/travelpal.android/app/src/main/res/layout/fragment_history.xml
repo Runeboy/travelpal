@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/skodId"
+    tools:context=".fragment.HistoryFragment"
+     android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/closeHistoryButton"
+        android:text="&lt; Back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="finish"
+        />
+
+
+    <ListView
+        android:id="@+id/itemsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/statsLayout"
+        android:layout_below="@+id/closeHistoryButton"
+        android:transcriptMode="alwaysScroll"
+        />
+
+    <RelativeLayout
+        android:id="@+id/statsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_blue_light"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="[count]"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/historyCountTextView"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo">
+        <!-- Customize your theme here. -->
+        <item name="android:buttonStyle">@style/windowsPhoneLikeButton</item>
+        <item name="android:buttonStyleToggle">@style/windowsPhoneLikeButton</item>
+    </style>
+
+
+    <style name="windowsPhoneLikeButton" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@drawable/button_text_color</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <!--<item name="android:shadowColor">#FF000000</item>-->
+        <!--<item name="android:shadowDx">0</item>-->
+        <!--<item name="android:shadowDy">-1</item>-->
+        <!--<item name="android:shadowRadius">0.2</item>-->
+        <item name="android:textSize">20sp</item> <!-- sp = px * ratio * scale = allows users to tweak font scale to own choosing -->
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="transparent" parent="android:Theme">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

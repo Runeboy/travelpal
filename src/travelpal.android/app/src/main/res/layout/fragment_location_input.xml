@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragment.LocationInputFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locationText"
+        android:layout_marginTop="12dp"
+        />
+
+    <ToggleButton
+        android:id="@+id/getLocationButton"
+        android:text=""
+        android:drawableLeft="@android:drawable/ic_menu_compass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        />
+
+    <EditText
+        android:id="@+id/locationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/locationTextView"
+        android:layout_toLeftOf="@id/getLocationButton"
+        />
+
+    <Button
+    android:id="@+id/checkInOutButton"
+    android:layout_marginTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_below="@id/locationEditText"
+    android:text="Check ..."
+    />
+
+</RelativeLayout>
